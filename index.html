@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      
+      <!-- Custom css -->
+      <link rel="stylesheet" href="joeSecure.css">
+      
+      
+    <title>Magodo Estate Security Data</title>
+      
+      
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+  </head>
+  <body id="mainBody">
+      
+      <div class="container">
+          <diV class="page-header repositionHead">
+              <h1>Magodo Estate Security eData</h1>
+          </diV>
+          
+          <div class="row">
+              <div class="col-sm-8">
+                  
+                      <div class="row">
+                          <div id="firstButton" class="col-sm-6">
+                              <button type="button" id="btnOnFoot" class="btn btn-large btn-danger" placeholder="">Check-in on Foot</button>
+                          </div><!--first button-->
+                          <div id="secondButton" class="col-sm-6">
+                              <button type="button" id="btnOnMobile" class="btn btn-large btn-danger btnMargin" placeholder="">Check-in on Wheel</button>
+                          </div><!--second button-->
+                      </div>
+                  
+                  
+                  <div class="container" id="firstContainer">
+                      <diV class="page-header HeadOne">
+                          <h1>Visitor On Foot</h1>
+                      </diV>
+                      
+                      <div class="row">
+                          <div class="col-sm-3 col-md-0"></div>
+                          <div class="col-sm-6 col-md-12 uniqueBack">
+                              <form id="footEntry">
+                                  <div class="form-group">
+                                      <label for="visitorName">Visitor Names</label>
+                                      <input type="text" id="visitorName" class="form-control fill" placeholder="Visitor Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="phoneNumber">Phone Number</label>
+                                      <input type="tel" id="phoneNumber" class="form-control fill" placeholder="Visitor Phone Number">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="visitorPix">Visitor Photo</label>
+                                      <input type="file" id="visitorPix" class="form-control fill" placeholder="Click to Snap">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="residentNames">Resident Names</label>
+                                      <input type="text" id="residentNames" class="form-control fill" placeholder="Resident Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="address">Resident Address</label>
+                                      <textarea id="address" class="form-control fill" placeholder="Resident Address"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="dateAndTime">Date And Time</label>
+                                      <input type="datetime-local" id="dateAndTime" class="form-control fill">
+                                  </div>
+                              </form><!--FootEntry form-->
+                              <div class="row row-shift">
+                                  <div class="col-sm-6"><button type="submit" class="btn btn-secondary verify">Check in</button></div>
+                                  <div class="col-sm-6"><button type="submit" class="btn btn-secondary button-shift btnMargin">Check out</button></div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3 col-md-0"></div>
+                      </div>
+                  </div><!-- firstContainer-->
+                  
+                  <div class="container" id="secondContainer">
+                      <diV class="page-header HeadOne">
+                          <h1>Visitor With Car</h1>
+                      </diV>
+                      
+                      <div class="row">
+                          <div class="col-sm-3 col-md-0"></div>
+                          <div class="col-sm-6 col-md-12 uniqueBack">
+                              <form id="mobileEntry">
+                                  <div class="form-group">
+                                      <label for="Driver">Driver Names</label>
+                                      <input type="text" id="Driver" class="form-control fill" placeholder="Driver Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="DphoneNumber">Driver Phone Number</label>
+                                      <input type="tel" id="DphoneNumber" class="form-control fill" placeholder="Driver Phone Number">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="DriverPix">Driver Photo</label>
+                                      <input type="file" id="DriverPix" class="form-control fill" placeholder="Click to Snap">
+                                  </div>
+                                  
+                                  <div class="radio">
+                                      <label><b>Is the Driver the Main Visitor?</b></label><br>
+                                      <label>
+                                          <input type="radio" name="formRadio" id="showIt">No
+                                      </label>
+                                      <label>
+                                          <input id="hideIt" type="radio" name="formRadio">Yes
+                                      </label>
+                                  </div>
+                                  
+                                  <div id="hideThis">
+                                      <div class="form-group">
+                                      <label for="visitorName2">Main Visitor Names</label>
+                                      <input type="text" id="visitorName2" class="form-control fill" placeholder="Visitor Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="phoneNumber2">Phone Number</label>
+                                      <input type="tel" id="phoneNumber2" class="form-control fill" placeholder="Visitor Phone Number">
+                                  </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="visitorPix2">Take Group Photo Of Other Occupant of the car</label>
+                                      <input type="file" id="visitorPix2" class="form-control fill" placeholder="Click to Snap">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="enterNo2">Total Numbers of occupants in the car</label>
+                                      <input type="text" id="enterNo2" class="form-control fill" placeholder="Input total Number">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="residentNames2">Resident Names</label>
+                                      <input type="text" id="residentNames2" class="form-control fill" placeholder="Resident Full Name">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="address2">Resident Address</label>
+                                      <textarea id="address2" class="form-control fill" placeholder="Resident Address"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="dateAndTime">Date And Time</label>
+                                      <input type="datetime-local" id="dateAndTime" class="form-control fill">
+                                  </div>
+                              </form><!--mobileEntry form-->
+                              <div class="row row-shift">
+                                  <div class="col-sm-6 reDisplay"><button type="submit" class="btn btn-secondary" id="verify">Check in</button></div>
+                                  <div class="col-sm-6 reDisplay"><button type="submit" class="btn btn-secondary button-shift btnMargin">Check out</button></div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3 col-md-0"></div>
+                      </div>
+                  </div><!-- secondContainer-->
+              </div>
+              
+              <div class="col-sm-4" id="sideBar">
+                  <div class="row">
+                      
+                  </div>
+                  <h3>TO CHECK OUT</h3>
+                  <p class="lead">Search data with either...</p>
+                  
+                  <form>
+                      <div class="form-group">
+                          <label for="Names" class="fullNames sr-only">Search</label>
+                          <input type="search" id="Names" class="form-control" placeholder="Names, Phone or Car Number">
+                      </div>
+                  </form>
+                  
+              </div>
+          </div>
+          
+      </div>
+              
+
+      
+        
+        <script src="secure.js"></script>
+      
+      <!--Local bootstrap JS-->
+    <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

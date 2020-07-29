@@ -1,0 +1,64 @@
+body#mainBody {
+    background: #085164;
+    background-size: cover;
+    color: white; 
+}
+
+.repositionHead {
+    text-align: center;
+    border-bottom: solid 2px #023e4d;
+    margin-bottom: 8px;
+}
+
+.HeadOne {
+    text-align: center;
+    color: #643615;
+    position: relative;
+    top: 45px;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.uniqueBack {
+
+    margin: 40px auto 0;
+    padding: 50px;
+    box-sizing: border-box;
+    background: #122833;
+    box-shadow: 0 10px 15px -8px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+div.row-shift {
+    position: relative;
+    left: 
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .uniqueBack {
+        max-width: 500px;
+    }
+    
+    #sideBar {
+        
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .btnMargin {
+        position: relative;
+        top: 10px;
+    }
+    
+    #sideBar {
+        padding-top: 10px;
+    }
+    
+}
